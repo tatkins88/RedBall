@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Red Ball Part 1</title>
+<script src="http://lrn.icstars.org/redball.js"></script>
+<script>
+function moveleft()
+
+{
+redball.left=redball.left-5;
+}
+function sayhello()
+
+{
+
+alert("tweety i love you");
+}
+function moveright() 
+{
+redball.left=redball.left+5;
+}
+function moveup ()
+
+{
+redball.top=redball.top-5;
+}
+function movedown()
+{
+redball.top=redball.top+5;
+}
+function movesquare()
+{
+redball.left=redball.left-40;redball.left=redball.left-40;redball.left=redball.left-40;
+redball.top=redball.top-40;redball.top=redball.top-40;redball.top=redball.top-40;
+redball.left=redball.left+40;redball.left=redball.left+40;redball.left=redball.left+40;
+redball.top=redball.top+40;redball.top=redball.top+40;redball.top=redball.top+40;
+}
+</script>
+</head>
+<body>
+<button onclick="sayhello();">helloworld</button>
+<button onclick="moveleft();">move left</button>
+<button onclick="moveright();">move right</button>
+<button onclick="moveup();">move up</button>
+<button onclick="movedown();">move down</button>
+<button onclick="movesquare();">move square</button>
+<img src="redball1.jpg" id="redball"/>
+
+</body>
+</html>
