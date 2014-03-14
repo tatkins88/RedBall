@@ -1,0 +1,14 @@
+<html>
+<head>
+<style>
+#redball{
+	position:absolute;
+	left:200px;
+}
+</style>
+<script src="http://http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"><
+</head>
+<body>
+<img src="redball.jpg" id="redball"/>
+</body>
+</html>

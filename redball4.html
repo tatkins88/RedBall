@@ -1,0 +1,99 @@
+<html>
+		<head>
+				<style>
+				.ball{
+				position:absolute;
+				left:200px;
+}
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</script>
+<script>
+function ball(cssid)
+{
+	this.moveright=function()
+{
+	var pos=$(cssid).offset();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.left=pos.left+20;
+	$(cssid).offset(pos);
+}
+	this.movedown=function()
+{
+	var pos=$(cssid).offset();
+	console.log("top "+pos.top);
+	pos.top=pos.top+20;
+	$(cssid).offset(pos);
+	}
+	this.moveupright-function()
+{
+	var pos=$(cssid).offset();
+	console.log("top "+pos.right);
+	console.log("left "+pos.down);
+	pos.left=pos.left-20;
+	$ (cssid).offset(pos);
+	}
+	this.moveleft=function()
+{
+	var pos=$(cssid).offset();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.left=pos.left+20;
+	$(cssid).offset(pos);
+}
+    this.moveup=function()
+{
+	var pos=$(cssid).offset();
+	console.log("top "+position.top);
+	position.top=position.top-20;
+	$(cssid).offset(pos);
+}
+	this.moveupleft=function()
+{
+	var pos=$(cssid).offset();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.top=pos.left-20;
+	pos.top=pos.top-20;
+	$(cssid).offset(pos);
+	}
+	this.movedownleft=function()
+{
+	var pos=$(cssid).off();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.left=pos.left+20;
+	pos.top=pos.top+20;
+	$(cssid).offset(pos);
+	}
+	this.movedownright=function()
+{
+	var pos=$(cssid).off();
+	console.log("left "+pos.left);
+	console.log("top "+pos.top);
+	pos.left=pos.left+20;
+	pos.top=pos.top+20;
+	$(cssid).offset(pos);
+	}
+
+}
+var redball=new ball("#redball");
+var greenball=new ball("#greenball");
+var purpleball=new ball("#purpleball");
+var orangeball=new ball("#orangeball");
+var blueball=new ball("#blueball");
+var yellowball=new ball("#yellowball");
+var rainbowball=new ball("#rainbowball");
+</script>
+
+<body>
+<img src="redballl.jpg" id="redball" class="ball"/>
+<img src="greenball.jpg" id="greenball" class="ball"/>
+<img src="purpleball.jpg" id="purpleball" class="ball"/>
+<img src="orangeball.jpg" id="orangeball" class="ball"/>
+<img src="yellowball.jpg" id="yellowball" class="ball"/>
+<img src="rainbowball.jpg" id="rainbowball" class="ball"/>
+</body>
+</head>
+</html>

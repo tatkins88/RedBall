@@ -29,12 +29,38 @@ redball.top=redball.top+5;
 }
 function movesquare()
 {
-redball.left=redball.left-40;redball.left=redball.left-40;redball.left=redball.left-40;
-redball.top=redball.top-40;redball.top=redball.top-40;redball.top=redball.top-40;
-redball.left=redball.left+40;redball.left=redball.left+40;redball.left=redball.left+40;
-redball.top=redball.top+40;redball.top=redball.top+40;redball.top=redball.top+40;
+	for(var i=1;i<=6;i++)
+		{
+		moveleft();
+		}
+	for(var i=1;i<=6;i++)	
+		
+		{
+		movetop();
+		}
+	for(var i=1;i<=6;i++)
+		{
+		moveright();
+		}
+	for(var i=1;i<=6;i++)
+		{
+		movedown();
+		}
 }
-
+function moverectangle()
+{
+redball.top=redball.top-100;
+redball.left=redball.left-200;
+redball.top=redball.top+100;
+redball.left=redball.left+200;
+}
+function moveup10()
+{
+	for(var i=1;i<=10;i++)
+	{
+	moveup();
+	}
+}
 
 
 </script>
@@ -46,7 +72,9 @@ redball.top=redball.top+40;redball.top=redball.top+40;redball.top=redball.top+40
 <button onclick="moveup();">move up</button>
 <button onclick="movedown();">move down</button>
 <button onclick="movesquare();">move square</button>
-<img src="redball1.jpg" id="redball"/>
+<button onclick="moverectangle();">move rectangle</button>
+<button onclick="moveup10();">up 10</button>
+<img src="redballl.jpg" id="redball"/>
 
 </body>
 </html>
